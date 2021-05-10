@@ -1,0 +1,179 @@
+/**
+ * Reset
+ */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+}
+
+/**
+ * Base
+ */
+
+body {
+    background-color: #c2d53d;
+    background-image: url(../images/texture.png);
+    background-position: center 0;
+    color: #605f5f;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+h1 {
+    font-family: 'Itim', sans-serif;
+    font-size: 5em;
+    line-height: 1.2;
+    margin-bottom: .35em;
+}
+
+h2 {
+    color: #605f5f;
+    margin-bottom: 1.75em;
+}
+
+/**
+ * Fonts
+ */
+
+@font-face {
+    font-family: 'Itim';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+    url('fonts/itim-v5-latin-regular.woff2') format('woff2'),
+    url('fonts/itim-v5-latin-regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+    url('fonts/open-sans-v18-latin-regular.woff2') format('woff2'),
+    url('fonts/open-sans-v18-latin-regular.woff') format('woff');
+}
+
+/**
+ * Classes
+ */
+
+.hero {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    overflow: hidden;
+    padding: 30px;
+    width: 100vw;
+}
+
+.hero__image img {
+    height: 400px;
+}
+
+.hero__text {
+    color: white;
+    margin-left: 60px;
+}
+
+.socials__link {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.socials__link + .socials__link {
+    margin-left: 1em;
+}
+
+.icon {
+    fill: #fff;
+    height: 30px;
+    width: 30px;
+}
+
+.icon:hover {
+    fill: #ffb837;
+}
+
+.icon--outlined {
+    fill: none;
+    stroke: currentColor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 2;
+}
+
+.cat {
+    bottom: 0;
+    height: 60px;
+    left: 40px;
+    position: absolute;
+}
+
+/**
+ * Media
+ */
+
+@media (max-width: 1023px) {
+    body {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+        font-size: 0.7em;
+    }
+
+    .hero {
+        padding: 20px;
+    }
+
+    .hero__text {
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 417px) {
+    .hero__image {
+        margin-left: -140px;
+    }
+
+    .cat {
+        left: -25px;
+    }
+}
+
+@media (max-width: 320px) {
+    body {
+        font-size: 0.55em;
+    }
+
+    .socials__link + .socials__link {
+        margin-left: 0.8em;
+    }
+}
+
+@media (max-height: 540px) {
+    .cat {
+        left: auto;
+        right: 20px;
+    }
+}
