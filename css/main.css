@@ -124,6 +124,7 @@ h2 {
     bottom: 0;
     height: 60px;
     left: 40px;
+    opacity: 0.7;
     position: fixed;
 }
 
